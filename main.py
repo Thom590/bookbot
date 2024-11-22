@@ -1,19 +1,21 @@
 import os
 from parse import parse
 from countWords import countWords
-#from createStrings import createStrings
+from createStrings import createWordsStrings
+
 
 
 def main():
 
-    userInput = os.path.expanduser(input("Define path to file:"))
+    userInput = os.path.expanduser('~/workspace/github.com/Thom590/bookbot/books/frankenstein.txt')
 
     myParse = parse(userInput) 
     print(myParse)
 
-    totalWords = (countWords(myParse))
+    wordsStrings = createWordsStrings(myParse)
+    totalWords = countWords(wordsStrings)
     print(totalWords)
-    #print(file_content)
-    #print(i)
+    
+
     
 main()
