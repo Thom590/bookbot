@@ -10,5 +10,6 @@ def parse(user_input):
 def main():
     collected_input = os.path.expanduser(input("Define path to file:"))
     parse(collected_input)
-
+    print(file_content)
+    
 main()
