@@ -8,14 +8,7 @@ def parse(user_input):
         file_content = f.read()
 
 def main():
-    collected_input = input("Define path to file:")
-    collected_input = os.path.expanduser(collected_input)
+    collected_input = os.path.expanduser(input("Define path to file:"))
     parse(collected_input)
-    print("hello word")
-    print("collected input:", collected_input)
-    print("file_contnet:", file_content)
-    
-
-
 
 main()
